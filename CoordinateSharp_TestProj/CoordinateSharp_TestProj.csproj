@@ -35,9 +35,6 @@
     <Reference Include="Colorful.Console, Version=1.2.9.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Colorful.Console.1.2.9\lib\net461\Colorful.Console.dll</HintPath>
     </Reference>
-    <Reference Include="CoordinateSharp">
-      <HintPath>..\CoordinateSharp\bin\Debug\netstandard2.0\CoordinateSharp.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -50,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CelestialTests.cs" />
+    <Compile Include="DebugNullRefIssue.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -139,6 +137,12 @@
     <Content Include="Coordinates.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoordinateSharp\CoordinateSharp.csproj">
+      <Project>{82b32704-3306-49fd-a7fa-db48b67b7b64}</Project>
+      <Name>CoordinateSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

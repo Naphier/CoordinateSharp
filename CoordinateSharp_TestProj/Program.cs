@@ -1,4 +1,4 @@
-﻿/*
+/*
  * The following program is used to automate certain aspects of the testing of CoordinateSharp.
  */
 using System;
@@ -17,6 +17,9 @@ namespace CoordinateSharp_TestProj
       
         static void Main(string[] args)
         {
+            //new DebugNullRefIssue(Console.WriteLine, false);
+            //Console.ReadLine();
+            //return;
             while (true)
             {
                 Console.WriteLine("Select Test Module to Run (Enter Test Number):");
